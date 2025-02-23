@@ -1,7 +1,7 @@
 # 🔥 AndroidReverse101 | 100 天精通 Android 逆向工程
 
 > - 更新时间：2025年2月23日
-> - 作者：EvilOctal
+> - 作者：Evil0ctal
 > - 编写工具：ChatGPT、Claude、DeepSeek
 > - GitHub 仓库：[AndroidReverse101](https://github.com/Evil0ctal/AndroidReverse101)
 > -  欢迎各位 Star、Fork，PR，一起交流和学习 Android 逆向！
