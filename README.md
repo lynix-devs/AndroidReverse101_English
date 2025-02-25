@@ -1,8 +1,7 @@
 # 🔥 AndroidReverse101 | 100 天精通 Android 逆向工程
 
-> - 更新时间：2025年2月23日
+> - 更新时间：2025年2月24日
 > - 作者：Evil0ctal
-> - 编写工具：ChatGPT、Claude、DeepSeek
 > - GitHub 仓库：[AndroidReverse101](https://github.com/Evil0ctal/AndroidReverse101)
 > -  欢迎各位 Star、Fork，PR，一起交流和学习 Android 逆向！
 
@@ -85,6 +84,18 @@
 
 🔥 **100 天后，你将具备完整的 Android 逆向能力！**  
 🔓 **破解应用、分析安全漏洞、探索 Android 底层奥秘！** 🚀  
+
+---
+
+## **🔍 Crackme 题目**
+
+> **Crackme 是逆向工程中常见的挑战题目，用于练习逆向技术。**
+
+| **题目**                                             | **描述**                      | **难度** |
+|----------------------------------------------------|-----------------------------|---------|
+| [Crackme 1](./Crackmes/Android/Level_01/README.md) | 此应用程序的某处隐藏着一个秘密字符串，请想办法提取它。 | ⭐️ |
+| [Crackme 2](./Crackmes/Android/Level_02/README.md) | 此应用程序内藏秘密，可能包含本机代码的痕迹。      | ⭐️⭐️ |
+
 
 ---
 
