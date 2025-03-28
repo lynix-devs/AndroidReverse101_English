@@ -1,82 +1,82 @@
-### **📜 Day 1: 什么是逆向工程**  
+### **📜 Day 1: What is Reverse Engineering**
 
-#### **📌 学习目标**  
-✅ 理解什么是 **逆向工程**，并了解它的应用场景。  
-✅ 了解 **逆向工程** 与 **正向工程** 的区别。  
-✅ 熟悉 **软件逆向** 的基础概念，如 **静态分析** 和 **动态分析**。  
-✅ 了解常见的逆向工具，并安装基本环境。  
+#### **📌 Learning Objectives**  
+✅ Understand what **reverse engineering** is and its application scenarios.  
+✅ Understand the difference between **reverse engineering** and **forward engineering**.  
+✅ Familiarize yourself with basic concepts of **software reverse engineering**, such as **static analysis** and **dynamic analysis**.  
+✅ Learn about common reverse engineering tools and set up the basic environment.  
 
----  
+---
 
-#### **📖 知识点**  
+#### **📖 Knowledge Points**  
 
-### **1️⃣ 什么是逆向工程？**  
-逆向工程（Reverse Engineering，简称 RE）是一种通过分析现有系统的**结构、功能、实现原理**，以理解其工作方式的过程。  
+### **1️⃣ What is Reverse Engineering?**  
+Reverse engineering (RE) is the process of analyzing the **structure, function, and implementation principles** of an existing system to understand how it works.  
 
-🔹 逆向工程的本质是**拆解和理解**，它不仅适用于软件，也被广泛应用于**硬件、网络协议、安全研究、AI 模型分析等**。  
+🔹 The essence of reverse engineering is **disassembly and understanding**. It is not only applicable to software but also widely used in **hardware, network protocols, security research, AI model analysis, etc.**  
 
-### **2️⃣ 逆向工程的应用场景**
-| **领域**      | **应用** |
-|-------------|--------------------------------------------------|
-| **软件分析** | 逆向 APP、软件破解、逆向协议、API 调试 |
-| **安全研究** | 恶意软件分析、漏洞挖掘、病毒分析、Web 安全测试 |
-| **硬件分析** | 晶片分析、PCB 设计、物联网设备破解 |
-| **AI 逆向** | AI 模型解析、权重提取、推理优化 |
-| **游戏逆向** | 游戏外挂开发、资源提取、网络封包分析 |
+### **2️⃣ Application Scenarios of Reverse Engineering**
+| **Field**      | **Applications** |
+|----------------|--------------------------------------------------|
+| **Software Analysis** | Reverse engineering apps, software cracking, reverse protocols, API debugging |
+| **Security Research** | Malware analysis, vulnerability mining, virus analysis, web security testing |
+| **Hardware Analysis** | Chip analysis, PCB design, IoT device cracking |
+| **AI Reverse Engineering** | AI model analysis, weight extraction, inference optimization |
+| **Game Reverse Engineering** | Game cheat development, resource extraction, network packet analysis |
 
-**🌟 案例 1：软件破解**  
-- 你下载了一款**付费应用**，但是没有购买权限。你可以通过逆向工程分析其**验证逻辑**，并尝试绕过它。  
+**🌟 Case 1: Software Cracking**  
+- You downloaded a **paid app** but don't have purchase rights. You can use reverse engineering to analyze its **verification logic** and try to bypass it.  
 
-**🌟 案例 2：协议分析**  
-- 某 APP 仅支持官方客户端访问 API，你可以通过逆向分析其 **API 结构**，然后自己编写代码调用它。  
+**🌟 Case 2: Protocol Analysis**  
+- An app only supports official clients to access the API. You can reverse engineer its **API structure** and then write your own code to call it.  
 
-### **3️⃣ 逆向工程 vs. 正向工程**
-| | **正向工程** | **逆向工程** |
+### **3️⃣ Reverse Engineering vs. Forward Engineering**
+|  | **Forward Engineering** | **Reverse Engineering** |
 |------|----------------|----------------|
-| **思维方式** | 设计并构建 | 拆解并分析 |
-| **目标** | 从 0 到 1 开发产品 | 理解已有产品 |
-| **应用场景** | 软件开发、系统设计 | 破解、漏洞挖掘、优化 |
-| **工具** | IDE（VS Code、Android Studio） | 反编译工具、调试器 |
+| **Thinking Approach** | Design and build | Disassemble and analyze |
+| **Goal** | Develop products from 0 to 1 | Understand existing products |
+| **Application Scenarios** | Software development, system design | Cracking, vulnerability mining, optimization |
+| **Tools** | IDEs (VS Code, Android Studio) | Decompilers, Debuggers |
 
-### **4️⃣ 静态分析 vs. 动态分析**
-| | **静态分析** | **动态分析** |
+### **4️⃣ Static Analysis vs. Dynamic Analysis**
+|  | **Static Analysis** | **Dynamic Analysis** |
 |-------------|---------------------------------|---------------------------------|
-| **方式** | 直接查看文件代码、结构 | 运行程序，监控行为 |
-| **工具** | 反编译工具（jadx, Ghidra） | 调试器（Frida, GDB, LLDB） |
-| **优势** | 快速分析，避免触发反调试 | 真实运行环境，动态观察 |
-| **劣势** | 有时无法直接看到运行逻辑 | 可能触发反调试保护 |
+| **Method** | Directly view file code, structure | Run the program, monitor behavior |
+| **Tools** | Decompilers (jadx, Ghidra) | Debuggers (Frida, GDB, LLDB) |
+| **Advantages** | Quick analysis, avoids triggering anti-debugging | Real runtime environment, observe dynamically |
+| **Disadvantages** | Sometimes can't directly see the running logic | May trigger anti-debugging protection |
 
 ---
 
-#### **🛠 实战任务**
-1️⃣ **安装基本逆向工具**  
-🔹 下载并安装 **jadx**（反编译 APK），分析 `classes.dex` 结构。  
-🔹 安装 **Frida**（Hook 工具），尝试 Hook 一个简单的 Python 脚本。  
-🔹 安装 **Ghidra / IDA Free**，打开并查看一个 ELF 文件。  
+#### **🛠 Practical Tasks**
+1️⃣ **Install Basic Reverse Engineering Tools**  
+🔹 Download and install **jadx** (for decompiling APKs), and analyze the `classes.dex` structure.  
+🔹 Install **Frida** (for hooking), and try hooking a simple Python script.  
+🔹 Install **Ghidra / IDA Free**, open and view an ELF file.  
 
-2️⃣ **分析一个简单 APK**
-- 下载任意 **APK 文件**（如 `Calculator.apk`）。  
-- 使用 `jadx` 反编译该 APK，查看 `MainActivity.java` 代码。  
-
----
-
-#### **📚 参考资料**
-📌 **Android 逆向工具**  
-- `jadx`：[https://github.com/skylot/jadx](https://github.com/skylot/jadx)  
-- `Frida`：[https://frida.re](https://frida.re)  
-- `Ghidra`：[https://ghidra-sre.org](https://ghidra-sre.org)  
-- `APKTool`：[https://github.com/iBotPeaches/Apktool](https://github.com/iBotPeaches/Apktool)  
-
-📌 **推荐阅读**
-- 《Android 软件安全与逆向分析》  
-- 《The Art of Reverse Engineering》  
-- 逆向工程博客：[https://reverseengineering.stackexchange.com](https://reverseengineering.stackexchange.com)  
+2️⃣ **Analyze a Simple APK**  
+- Download any **APK file** (e.g., `Calculator.apk`).  
+- Use `jadx` to decompile the APK and view the `MainActivity.java` code.  
 
 ---
 
-🔥 **任务完成后，你将掌握：**
-✅ 逆向工程的核心概念  
-✅ 逆向工程 vs. 正向工程的区别  
-✅ 基础工具安装与使用  
+#### **📚 Reference Materials**
+📌 **Android Reverse Engineering Tools**  
+- `jadx`: [https://github.com/skylot/jadx](https://github.com/skylot/jadx)  
+- `Frida`: [https://frida.re](https://frida.re)  
+- `Ghidra`: [https://ghidra-sre.org](https://ghidra-sre.org)  
+- `APKTool`: [https://github.com/iBotPeaches/Apktool](https://github.com/iBotPeaches/Apktool)  
 
-🚀 **下一步（Day 2）**：**Android 逆向的历史与发展** 🎯  
+📌 **Recommended Reading**  
+- "Android Software Security and Reverse Analysis"  
+- "The Art of Reverse Engineering"  
+- Reverse engineering blog: [https://reverseengineering.stackexchange.com](https://reverseengineering.stackexchange.com)  
+
+---
+
+🔥 **After completing the tasks, you will master:**  
+✅ Core concepts of reverse engineering  
+✅ Differences between reverse engineering and forward engineering  
+✅ Installation and use of basic tools  
+
+🚀 **Next step (Day 2)**: **History and Development of Android Reverse Engineering** 🎯  
