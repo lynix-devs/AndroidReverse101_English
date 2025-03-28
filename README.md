@@ -2,6 +2,7 @@
 
 > - Last Updated: February 24, 2025
 > - Author: Evil0ctal
+> - English Translation: Lynix-devs
 > - GitHub Repository: [AndroidReverse101](https://github.com/Evil0ctal/AndroidReverse101)
 > -  Contributions Welcome: Feel free to ⭐️ Star, Fork, and submit PRs to collaborate and learn Android reverse engineering together!
 
