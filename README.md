@@ -1,124 +1,124 @@
-# 🔥 AndroidReverse101 | 100 天精通 Android 逆向工程
+# AndroidReverse101 | Mastering Android Reverse Engineering in 100 Days
 
-> - 更新时间：2025年2月24日
-> - 作者：Evil0ctal
-> - GitHub 仓库：[AndroidReverse101](https://github.com/Evil0ctal/AndroidReverse101)
-> -  欢迎各位 Star、Fork，PR，一起交流和学习 Android 逆向！
+> - Last Updated: February 24, 2025
+> - Author: Evil0ctal
+> - GitHub Repository: [AndroidReverse101](https://github.com/Evil0ctal/AndroidReverse101)
+> -  Contributions Welcome: Feel free to ⭐️ Star, Fork, and submit PRs to collaborate and learn Android reverse engineering together!
 
-📖 **从 0 到 1，系统化学习 Android 逆向，让学习变得有趣、好玩、易上手！**  
-💡 **学习目标**：
-1. **新手友好**，即使没有编程经验也能逐步上手。
-2. **深入底层**，掌握 CPU 架构、汇编语言、ARM 指令集、Android 运行机制等知识。
-3. **实战驱动**，每天一个知识点+实验，学完即能应用。
-4. **破解与安全并重**，既能学习破解技巧，也能理解 Android 安全体系。
+📖 ** From Zero to One: A Systematic Approach to Learning Android Reverse Engineering—Making It Fun, Engaging, and Easy to Start!**  
+💡 **Learning Goals**：
+1. **Beginner-Friendly** – Designed for those with little to no programming experience.
+2. **Deep Dive** – Learn CPU architecture, assembly language, ARM instruction sets, Android runtime mechanics, and more.
+3. **Hands-on Approach** – Daily lessons + experiments, so you can immediately apply what you learn.
+4. **Balancing Cracking & Security** – Understand both reverse engineering techniques and Android security mechanisms.
 
 ---
 
-## **🚀 第一阶段：计算机基础 & 逆向概论（Day 1 - Day 20）**  
-🔹 **目标**：理解计算机底层架构，掌握 16 进制、CPU 指令集、汇编语言、Android 运行原理。
+## **Phase 1: Computer Fundamentals & Reverse Engineering Basics (Day 1 - Day 20)**  
+🔹 **Objective**：Understand low-level computer architecture, hexadecimal systems, CPU instruction sets, assembly language, and Android runtime principles.
 
-| **Day** | **主题**                                               | **内容** |
+| **Day** | **Topic**                                               | **Content** |
 |------|------------------------------------------------------|---------|
-| 🏁 **Day 1** | [**什么是逆向工程？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_1_什么是逆向工程.md) | 现实世界 vs. 软件世界，逆向的应用场景 |
-| 🔍 **Day 2** | [**Android 逆向的历史 & 发展**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_2_Android_逆向的历史与发展.md) | 从早期 APK 破解到现代应用保护 |
-| ⚙️ **Day 3** | [**什么是 CPU 指令集？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_3_什么是_CPU_指令集.md) | CISC vs. RISC，为什么 Android 采用 ARM |
-| 🔥 **Day 4** | [**进制转换：为什么 16 进制很重要？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_4_进制转换_为什么16进制很重要.md) | 2 进制、10 进制、16 进制转换与应用 |
-| 🏗 **Day 5** | [**汇编语言基础**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_5_汇编语言基础.md) | 汇编和机器码的关系，寄存器的作用 |
-| 🏹 **Day 6** | [**x86 vs. ARM 汇编**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_6_x86_vs._ARM_汇编.md) | x86 指令与 ARM 指令的区别 |
-| 📜 **Day 7** | [**ARM 汇编指令解析**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_7_ARM_汇编指令解析.md) | `MOV`、`ADD`、`SUB`、`LDR`、`STR` 指令 |
-| 🚀 **Day 8** | [**函数调用与返回**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_8_函数调用与返回.md) | `BL`、`BX`、`CALL`、`RET` 指令解析 |
-| 🏗 **Day 9** | [**Android CPU 架构解析**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_9_Android_CPU_架构解析.md) | ARMv7、ARMv8、ARM64 的区别 |
-| 📦 **Day 10** | [**Dalvik vs. ART 运行时**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_10_Dalvik_vs._ART_运行时.md) | Android 的 Java 虚拟机如何执行代码 |
-| 🔥 **Day 11** | [**Android 进程管理**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_11_Android_进程管理.md) | 什么是 Zygote 进程，APP 进程的生命周期 |
-| 🚀 **Day 12** | [**Android 权限机制**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_12_Android_权限机制.md) | `AndroidManifest.xml` 里的权限如何影响应用安全？ |
-| 📂 **Day 13** | [**Android APP 目录结构**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_13_Android_APP_目录结构.md) | `/data/data` 目录解析，APP 数据存储位置 |
-| 🔍 **Day 14** | [**APK 是如何加载的？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_14_APK_是如何加载的.md) | Android 进程如何解析 APK |
-| 🛠 **Day 15** | [**手写 ARM 汇编代码（实验）**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_15_手写_ARM_汇编代码_实验.md) | 编写简单的 ARM 汇编程序，并运行 |
-| 🔬 **Day 16** | [**反汇编工具介绍**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_16_反汇编工具介绍.md) | IDA Pro、Ghidra、objdump 等工具 |
-| 🏴 **Day 17** | [**ELF 文件解析**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_17_ELF_文件解析.md) | `readelf` 解析 `so` 文件结构 |
-| 🔥 **Day 18** | [**如何调试 Native 层？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_18_如何调试_Native_层.md) | LLDB / GDB 调试 `so` 文件 |
-| 🚀 **Day 19** | [**Android APP 安全机制**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_19_Android_APP_安全机制.md) | SELinux、应用沙盒、Root 检测 |
-| 🛡 **Day 20** | [**CTF 逆向挑战（初级）**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_20_CTF_逆向挑战_初级.md) | 参加一个 Android 逆向 CTF 题目 |
+| 🏁 **Day 1** | [**What is Reverse Engineering？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_1_什么是逆向工程.md) | Real-world vs. software reverse engineering, use cases |
+| 🔍 **Day 2** | [**History & Evolution of Android Reverse Engineering**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_2_Android_逆向的历史与发展.md) | From early APK cracking to modern app protection |
+| ⚙️ **Day 3** | [**What is a CPU Instruction Set?**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_3_什么是_CPU_指令集.md) | CISC vs. RISC, why Android uses ARM |
+| 🔥 **Day 4** | [**Hexadecimal Conversion: Why It Matters?**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_4_进制转换_为什么16进制很重要.md) | Binary, Decimal, Hexadecimal conversion & usage |
+| 🏗 **Day 5** | [**Assembly Language Basics**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_5_汇编语言基础.md) | Relationship between assembly and machine code, registers |
+| 🏹 **Day 6** | [**x86 vs. ARM Assembly**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_6_x86_vs._ARM_汇编.md) | Differences between x86 and ARM instructions |
+| 📜 **Day 7** | [**ARM Assembly Instruction Analysis**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_7_ARM_汇编指令解析.md) | Analysis of MOV, ADD, SUB, LDR, STR instructions |
+| 🚀 **Day 8** | [**Function Calls and Returns**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_8_函数调用与返回.md) | Analysis of BL, BX, CALL, RET instructions |
+| 🏗 **Day 9** | [**Android CPU Architecture Analysis**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_9_Android_CPU_架构解析.md) |  Differences between ARMv7, ARMv8, ARM64 |
+| 📦 **Day 10** | [**Dalvik vs. ART Runtime**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_10_Dalvik_vs._ART_运行时.md) | How Android's Java Virtual Machine executes code |
+| 🔥 **Day 11** | [**Android Process Management**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_11_Android_进程管理.md) | Understanding the Zygote process and app process lifecycle |
+| 🚀 **Day 12** | [**Android Permission Mechanism**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_12_Android_权限机制.md) | How permissions in AndroidManifest.xml affect app security |
+| 📂 **Day 13** | [**Android APP Directory Structure**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_13_Android_APP_目录结构.md) | Analysis of the /data/data directory and app data storage locations |
+| 🔍 **Day 14** | [**How is an APK Loaded？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_14_APK_是如何加载的.md) | How Android processes and loads an APK |
+| 🛠 **Day 15** | [**Writing ARM Assembly Code (Lab)**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_15_手写_ARM_汇编代码_实验.md) |  Writing ARM Assembly Code (Lab) |
+| 🔬 **Day 16** | [**Introduction to Disassembling Tools**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_16_反汇编工具介绍.md) | Tools like IDA Pro, Ghidra, objdump, etc. |
+| 🏴 **Day 17** | [**ELF File Analysis**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_17_ELF_文件解析.md) |Using readelf to analyze so file structure |
+| 🔥 **Day 18** | [**How to Debug the Native Layer？**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_18_如何调试_Native_层.md) | Debugging so files with LLDB / GDB |
+| 🚀 **Day 19** | [**Android APP Security Mechanisms**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_19_Android_APP_安全机制.md) | SELinux, app sandboxing, root detection |
+| 🛡 **Day 20** | [**CTF Reverse Engineering Challenges (Beginner)**](./AndroidReverse101/第一阶段_计算机基础_逆向概论/Day_20_CTF_逆向挑战_初级.md) | Participate in an Android reverse engineering CTF challenge |
 
 ---
 
-## **🔍 第二阶段：APK 逆向基础（Day 21 - Day 50）**  
-🔹 **目标**：掌握 APK 结构、DEX 反编译、Smali 语言、动态调试等核心技能。
+## **Phase 2: APK Reverse Engineering Basics (Day 21 - Day 50)**  
+🔹 **Objective:** Learn APK structure, DEX decompilation, Smali language, dynamic debugging, and core reverse engineering techniques.
 
-| **Day** | **主题**                                                                  | **内容** |
+| **Day** | **Topic**                                                                  | **Content** |
 |------|-------------------------------------------------------------------------|---------|
-| 🛠 **Day 21** | [**APK 文件结构解析**](./AndroidReverse101/第二阶段_APK逆向基础/Day_21_APK_文件结构解析.md) | `AndroidManifest.xml`、资源文件、DEX 文件 |
-| 🔄 **Day 22** | [**如何反编译 APK？**](./AndroidReverse101/第二阶段_APK逆向基础/Day_22_如何反编译_APK.md)                            | `jadx`、`apktool`、`baksmali` 介绍 |
-| 📜 **Day 23** | [**DEX 文件结构解析**](./AndroidReverse101/第二阶段_APK逆向基础/Day_23_DEX_文件结构解析.md)                           | `ClassDefItem`、`MethodIdItem`、`StringIdItem` |
-| 📦 **Day 24** | [**Smali 语言入门**](./AndroidReverse101/第二阶段_APK逆向基础/Day_24_Smali_语言入门.md)                           | Smali 代码结构、指令解析 |
-| 📝 **Day 25** | [**Smali 代码修改实验**](./AndroidReverse101/第二阶段_APK逆向基础/Day_25_Smali_代码修改实验.md)                       | 手动修改 `smali` 代码，绕过 VIP 限制 |
-| 🚀 **Day 26** | [**APK 重新打包 & 签名**](./AndroidReverse101/第二阶段_APK逆向基础/Day_26_APK_重新打包_签名.md)                       | `apktool` 修改 APK，重新打包并签名 |
-| 🔍 **Day 27** | [**动态调试入门**](./AndroidReverse101/第二阶段_APK逆向基础/Day_27_动态调试入门.md)                                   | `logcat` 观察应用行为 |
-| 🔬 **Day 28** | [**使用 Frida Hook Java 方法**](./AndroidReverse101/第二阶段_APK逆向基础/Day_28_使用_Frida_Hook_Java_方法.md)     | 修改 Java 方法返回值 |
-| 🏹 **Day 29** | [**Frida Hook 实战**](./AndroidReverse101/第二阶段_APK逆向基础/Day_29_Frida_Hook_实战.md)                     | 绕过 Root 检测 |
-| 💉 **Day 30** | [**逆向 JNI 和 Native 方法**](./AndroidReverse101/第二阶段_APK逆向基础/Day_30_逆向_JNI_和_Native_方法.md)           | 如何分析 `libnative.so` |
-| 🔥 **Day 31** | [**Xposed 入门**](./AndroidReverse101/第二阶段_APK逆向基础/Day_31_Xposed_入门.md)                             | Hook Java 方法，修改应用行为 |
-| 🚀 **Day 32** | [**实战：破解 VIP 限制**](./AndroidReverse101/第二阶段_APK逆向基础/Day_32_破解_VIP_限制.md)                          | Hook `isVip()` 方法，解锁 App 会员功能 |
-| 🔗 **Day 33** | [**绕过 SSL Pinning**](./AndroidReverse101/第二阶段_APK逆向基础/Day_33_绕过_SSL_Pinning.md)                   | 破解 HTTPS 请求拦截，抓取 API 数据 |
-| 🛡 **Day 34** | [**Android 代码混淆与解混淆**](./AndroidReverse101/第二阶段_APK逆向基础/Day_34_Android_代码混淆与解混淆.md)               | ProGuard、R8 的工作原理 |
-| 🔍 **Day 35** | [**逆向加密算法（MD5、AES、RSA）**](./AndroidReverse101/第二阶段_APK逆向基础/Day_35_逆向加密算法_MD5_AES_RSA.md)          | 分析应用的加密逻辑 |
-| 🔥 **Day 36** | [**分析 WebSocket & API 请求**](./AndroidReverse101/第二阶段_APK逆向基础/Day_36_分析_WebSocket_API_请求.md)       | 使用 Burp Suite 进行协议分析 |
-| 🚀 **Day 37** | [**破解应用限制（实战）**](./AndroidReverse101/第二阶段_APK逆向基础/Day_37_破解应用限制_实战.md)                            | 绕过 `isForceUpdate()` 方法 |
-| 🏹 **Day 38** | [**游戏破解基础**](./AndroidReverse101/第二阶段_APK逆向基础/Day_38_游戏破解基础.md)                                   | Hook `buyItem()`，模拟游戏内购 |
-| 🔬 **Day 39** | [**反反调试**](./AndroidReverse101/第二阶段_APK逆向基础/Day_39_反反调试.md)                                       | 绕过 `ptrace()` 保护 |
-| 🏴‍☠️ **Day 40** | [**Android 加固原理**](./AndroidReverse101/第二阶段_APK逆向基础/Day_40_Android_加固原理.md)                       | 360 加固、腾讯加固的工作方式 |
-| 🔍 **Day 41** | [**解密加固 APK（初级）**](./AndroidReverse101/第二阶段_APK逆向基础/Day_41_解密加固_APK_初级.md)                        | 脱壳工具 Frida DumpDex |
+| 🛠 **Day 21** | [**Understanding APK File Structure**](./AndroidReverse101/第二阶段_APK逆向基础/Day_21_APK_文件结构解析.md) | AndroidManifest.xml, resource files, DEX files |
+| 🔄 **Day 22** | [**How to Decompile an APK?**](./AndroidReverse101/第二阶段_APK逆向基础/Day_22_如何反编译_APK.md)                            | Tools like jadx, apktool, baksmali |
+| 📜 **Day 23** | [**Understanding DEX File Structure**](./AndroidReverse101/第二阶段_APK逆向基础/Day_23_DEX_文件结构解析.md)                           | `ClassDefItem`、`MethodIdItem`、`StringIdItem` |
+| 📦 **Day 24** | [**Introduction to Smali Language**](./AndroidReverse101/第二阶段_APK逆向基础/Day_24_Smali_语言入门.md)                           | Smali code structure, instruction analysis |
+| 📝 **Day 25** | [**Smali Code Modification Lab**](./AndroidReverse101/第二阶段_APK逆向基础/Day_25_Smali_代码修改实验.md)                       | Manually modify smali code to bypass VIP restrictions |
+| 🚀 **Day 26** | [**APK Repackaging & Signing**](./AndroidReverse101/第二阶段_APK逆向基础/Day_26_APK_重新打包_签名.md)                       | Modify APK with apktool, repack, and sign |
+| 🔍 **Day 27** | [**Introduction to Dynamic Debugging**](./AndroidReverse101/第二阶段_APK逆向基础/Day_27_动态调试入门.md)                                   | Observe app behavior with logcat |
+| 🔬 **Day 28** | [**Using Frida to Hook Java Methods**](./AndroidReverse101/第二阶段_APK逆向基础/Day_28_使用_Frida_Hook_Java_方法.md)     | Modify Java method return values |
+| 🏹 **Day 29** | [**Frida Hook Practical**](./AndroidReverse101/第二阶段_APK逆向基础/Day_29_Frida_Hook_实战.md)                     | Bypass Root detection |
+| 💉 **Day 30** | [**Reverse Engineering JNI and Native Methods**](./AndroidReverse101/第二阶段_APK逆向基础/Day_30_逆向_JNI_和_Native_方法.md)           | How to analyze libnative.so |
+| 🔥 **Day 31** | [**Introduction to Xposed**](./AndroidReverse101/第二阶段_APK逆向基础/Day_31_Xposed_入门.md)                             | Hook Java methods and modify app behavior |
+| 🚀 **Day 32** | [**Practical: Bypass VIP Restrictions**](./AndroidReverse101/第二阶段_APK逆向基础/Day_32_破解_VIP_限制.md)                          | Hook `isVip()` method and unlock app membership features |
+| 🔗 **Day 33** | [**Bypass SSL Pinning**](./AndroidReverse101/第二阶段_APK逆向基础/Day_33_绕过_SSL_Pinning.md)                   | Crack HTTPS request interception and capture API data |
+| 🛡 **Day 34** | [**Android Code Obfuscation and De-obfuscation**](./AndroidReverse101/第二阶段_APK逆向基础/Day_34_Android_代码混淆与解混淆.md)               | How ProGuard and R8 work |
+| 🔍 **Day 35** | [**Reverse Engineering Encryption Algorithms (MD5, AES, RSA)**](./AndroidReverse101/第二阶段_APK逆向基础/Day_35_逆向加密算法_MD5_AES_RSA.md)          | Analyze app encryption logic |
+| 🔥 **Day 36** | [**Analyze WebSocket & API Requests**](./AndroidReverse101/第二阶段_APK逆向基础/Day_36_分析_WebSocket_API_请求.md)       | Use Burp Suite for protocol analysis |
+| 🚀 **Day 37** | [**Cracking App Restrictions (Practical)**](./AndroidReverse101/第二阶段_APK逆向基础/Day_37_破解应用限制_实战.md)                            | Bypass `isForceUpdate()` method |
+| 🏹 **Day 38** | [**Game Cracking Basics**](./AndroidReverse101/第二阶段_APK逆向基础/Day_38_游戏破解基础.md)                                   | Hook `buyItem()`，to simulate in-app purchases |
+| 🔬 **Day 39** | [**Anti-Anti-Debugging**](./AndroidReverse101/第二阶段_APK逆向基础/Day_39_反反调试.md)                                       | Bypass `ptrace()` protection |
+| 🏴‍☠️ **Day 40** | [**Android Hardening Principles**](./AndroidReverse101/第二阶段_APK逆向基础/Day_40_Android_加固原理.md)                       | How 360 and Tencent hardening works |
+| 🔍 **Day 41** | [**Decrypt Hardened APK (Beginner)**](./AndroidReverse101/第二阶段_APK逆向基础/Day_41_解密加固_APK_初级.md)                        | Use Frida DumpDex to unpackage |
 
 ---
 
-## **🚀 第三阶段：高级逆向 & CTF 挑战（Day 51 - Day 100）**  
-🔹 **目标**：深入研究 Android 加固与反加固、协议分析、漏洞挖掘。
+## **🚀 Phase 3: Advanced Reverse Engineering & CTF Challenges (Day 51 - Day 100)**  
+🔹 **Objective:** Deep dive into Android obfuscation, anti-reversing techniques, network security analysis, and vulnerability research
 
 | **Day** | **主题**                                                                                | **内容** |
 |------|---------------------------------------------------------------------------------------|---------|
-| 🔥 **Day 60** | [**深入分析 CTF 逆向挑战**](./AndroidReverse101/第三阶段_高级逆向_CTF挑战/Day_60_深入分析_CTF_逆向挑战.md)           | 分析高难度 APK |
-| 🏴‍☠️ **Day 70** | [**逆向挖掘 0Day 漏洞**](./AndroidReverse101/第三阶段_高级逆向_CTF挑战/Day_70_逆向挖掘_0Day_漏洞.md)        | 逆向真实应用，寻找安全漏洞 |
-| 🏆 **Day 100** | [**终极挑战：逆向一个完整 APP**](./AndroidReverse101/第三阶段_高级逆向_CTF挑战/Day_100_终极挑战_逆向一个完整_APP.md) | 还原加密算法，分析协议，破解 VIP |
+| 🔥 **Day 60** | [**CTF Reverse Engineering Challenges**](./AndroidReverse101/第三阶段_高级逆向_CTF挑战/Day_60_深入分析_CTF_逆向挑战.md)           | Analyze high-difficulty APK challenges |
+| 🏴‍☠️ **Day 70** | [**Finding 0-Day Vulnerabilities via Reverse Engineering**](./AndroidReverse101/第三阶段_高级逆向_CTF挑战/Day_70_逆向挖掘_0Day_漏洞.md)        | Reverse real-world apps to identify security flaws |
+| 🏆 **Day 100** | [**Final Challenge: Reverse Engineering a Full Android App**](./AndroidReverse101/第三阶段_高级逆向_CTF挑战/Day_100_终极挑战_逆向一个完整_APP.md) | Decrypt algorithms, analyze protocols, and bypass VIP features|
 
 ---
 
-🔥 **100 天后，你将具备完整的 Android 逆向能力！**  
-🔓 **破解应用、分析安全漏洞、探索 Android 底层奥秘！** 🚀  
+🔥 ** After 100 Days, You Will Have Mastered Android Reverse Engineering!**  
+🔓 **Crack apps, analyze security vulnerabilities, and explore Android internals like never before!** 🚀  
 
 ---
 
-## **🔍 Crackme 题目**
+## **🔍 Crackme Challenges**
 
-> **Crackme 是逆向工程中常见的挑战题目，用于练习逆向技术。**
+> **Crackme challenges are common in reverse engineering, used to practice reverse engineering techniques.**
 
 | **题目**                                             | **描述**                      | **难度** |
 |----------------------------------------------------|-----------------------------|---------|
-| [Crackme 1](./Crackmes/Android/Level_01/README.md) | 此应用程序的某处隐藏着一个秘密字符串，请想办法提取它。 | ⭐️ |
-| [Crackme 2](./Crackmes/Android/Level_02/README.md) | 此应用程序内藏秘密，可能包含本机代码的痕迹。      | ⭐️⭐️ |
+| [Crackme 1](./Crackmes/Android/Level_01/README.md) | There is a hidden secret string somewhere in this app, try to extract it.	 | ⭐️ |
+| [Crackme 2](./Crackmes/Android/Level_02/README.md) | This app contains secrets, possibly traces of native code.      | ⭐️⭐️ |
 
 
 ---
 
-## **📚 附录：学习资源 & 工具推荐**
+## **📚 Appendix: Recommended Learning Resources & Tools**
 
-1. **书籍推荐**：
-   - 《Android 安全攻防实战》
-   - 《Android 逆向工程》
+1. **Book Recommendations:**
+   - 《Android Security Attack and Defense》
+   - 《Android Reverse Engineering》
    - 《Android Hacker's Handbook》
-   - 《Android 漏洞与逆向分析》
-   - 《Android 安全攻防权威指南》
+   - 《Android Vulnerabilities and Reverse Analysis》
+   - 《The Android Security Attack and Defense Authority Guide》
 
-2. **工具推荐**：
-    - 反编译工具：jadx、apktool、dex2jar
-    - 动态调试工具：Frida、Xposed
-    - 逆向工具：IDA Pro、Ghidra、Hopper
-    - 调试器：LLDB、GDB
-    - 加固工具：360 加固、腾讯加固、阿里加固
-    - 逆向平台：Cuckoo、VirusTotal
-    - 网络代理：Burp Suite、Charles、Fiddler、Wireshark、mitmproxy、reqable
-    - 沙箱：DroidBox、AndroBugs、QARK
+2. **Tool Recommendations**
+    - Decompiling Tools: jadx, apktool, dex2jar
+    - Dynamic Debugging Tools: Frida, Xposed
+    - Reverse Engineering Tools: IDA Pro, Ghidra, Hopper
+    - Debuggers: LLDB, GDB
+    - Hardening Tools: 360 Hardening, Tencent Hardening, Ali Hardening
+    - Reverse Platforms: Cuckoo, VirusTotal
+    - Network Proxies: Burp Suite, Charles, Fiddler, Wireshark, mitmproxy, reqable
+    - Sandboxes: DroidBox, AndroBugs, QARK
 
-3. **学习网站**：
+3. **Learning Websites**
     - [Android Developers](https://developer.android.com/)
     - [Android 开发者官网](https://developer.android.google.cn/)
     - [Android 开发者博客](https://android-developers.googleblog.com/)
@@ -127,7 +127,7 @@
     - [AndroidX Tech](https://androidx.tech/)
     - [AndroidX Source](https://source.android.com/)
 
-4. **社区 & 论坛**：
+4. **Communities & Forums:**
     - [XDA Developers](https://www.xda-developers.com/)
     - [Reddit - Android Dev](https://www.reddit.com/r/androiddev/)
     - [Reddit - Reverse Engineering](https://www.reddit.com/r/ReverseEngineering/)
@@ -143,7 +143,7 @@
     - [SecWiki](https://www.sec-wiki.com/)
     - [安全脉搏](https://www.secpulse.com/)
 
-5. **CTF 竞赛**：
+5. **CTF Competitions**
     - [CTFTime](https://ctftime.org/)
     - [Hacker101 CTF](https://ctf.hacker101.com/)
     - [PicoCTF](https://picoctf.org/)
@@ -155,7 +155,7 @@
     - [HackThisSite](https://www.hackthissite.org/)
     - [CTF365](https://ctf365.com/)
 
-6. **安全会议**：
+6. **Security Conferences:**
     - [DEF CON](https://www.defcon.org/)
     - [Black Hat](https://www.blackhat.com/)
     - [RSA Conference](https://www.rsaconference.com/)
@@ -165,7 +165,7 @@
     - [Infiltrate](https://www.infiltratecon.com/)
     - [BSides](https://www.securitybsides.com/)
 
-7. **赏金猎人平台**：
+7. **Bug Bounty Platforms:**
     - [HackerOne](https://www.hackerone.com/)
     - [Bugcrowd](https://www.bugcrowd.com/)
     - [Synack](https://www.synack.com/)
@@ -174,7 +174,7 @@
     - [Intigriti](https://www.intigriti.com/)
     - [Open Bug Bounty](https://www.openbugbounty.org/)
 
-8. **安全博客**：
+8. **Security Blogs**：
     - [Google Project Zero](https://googleprojectzero.blogspot.com/)
     - [360 安全研究](https://www.freebuf.com/author/360)
     - [腾讯安全应急响应中心](https://security.tencent.com/)
@@ -185,16 +185,15 @@
     - [安全客](https://www.anquanke.com/)
 
 
-## **📝 作者的话**
+## **📝 Author's Note**
 
-🔥 **Android 逆向工程是一门既有趣又具有挑战性的技能！**
+🔥 **Android Reverse Engineering is a fun yet challenging skill!**
 
-🚀 **通过系统化学习，你将掌握逆向的核心技能，成为一名优秀的安全研究员！**
+🚀 **With systematic learning, you'll master the core skills of reverse engineering and become an excellent security researcher!**
 
-📚 **学无止境，持续学习，不断进步！**
+📚 **Learning is endless, keep learning and continuously improving!**
 
-👨‍💻 **加油！**
-
+👨‍💻 **Good luck!**
 
 
 
