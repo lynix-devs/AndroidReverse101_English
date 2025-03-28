@@ -30,7 +30,7 @@ Around 2010, many apps used simple `if (isVip) {}` logic to check VIP status.
 - Decompile APK using `Apktool`:  
   ```bash
   apktool d my_app.apk -o output_dir
--Modify smali code to alter the isVip() method:
+- Modify smali code to alter the isVip() method:
   ```smali
   .method public isVip()Z
     .registers 2
@@ -55,7 +55,7 @@ Around 2010, many apps used simple `if (isVip) {}` logic to check VIP status.
       public void b() { System.out.println("Hello!"); }
   }
   ```
-  **After decompilation：**
+  **After decompilation**
   ```java
   public class a {
       public void a() { System.out.println("Hello!"); }
@@ -65,6 +65,7 @@ Around 2010, many apps used simple `if (isVip) {}` logic to check VIP status.
 🔹 **Hardening Techniques (Dex Encryption & Code Extraction)**
 - Code was no longer stored directly in classes.dex but loaded dynamically at runtime.
 - Example: After 360 hardening, classes.dex might become libshell.so, requiring a dump to restore.
+
 🔹 **Anti-Dynamic Analysis (Anti-Debugging & Anti-Frida)**  
 - Early hooking tools (e.g., Frida) could easily modify app logic, but modern apps detect Frida:
   ```java
