@@ -5,7 +5,7 @@
 > - GitHub Repository: [AndroidReverse101](https://github.com/Evil0ctal/AndroidReverse101)
 > -  Contributions Welcome: Feel free to ⭐️ Star, Fork, and submit PRs to collaborate and learn Android reverse engineering together!
 
-📖 ** From Zero to One: A Systematic Approach to Learning Android Reverse Engineering—Making It Fun, Engaging, and Easy to Start!**  
+📖 **From Zero to One: A Systematic Approach to Learning Android Reverse Engineering—Making It Fun, Engaging, and Easy to Start!**  
 💡 **Learning Goals**：
 1. **Beginner-Friendly** – Designed for those with little to no programming experience.
 2. **Deep Dive** – Learn CPU architecture, assembly language, ARM instruction sets, Android runtime mechanics, and more.
@@ -82,7 +82,7 @@
 
 ---
 
-🔥 ** After 100 Days, You Will Have Mastered Android Reverse Engineering!**  
+🔥 **After 100 Days, You Will Have Mastered Android Reverse Engineering!**  
 🔓 **Crack apps, analyze security vulnerabilities, and explore Android internals like never before!** 🚀  
 
 ---
